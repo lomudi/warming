@@ -14,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(window.innerWidth - 4, window.innerHeight - 4);
   rows = table.getRows();
   sortedRows = rows.sort((a, b) => b.dt - a.dt);
   sortedRowsCount = sortedRows.length;
@@ -35,11 +35,11 @@ function draw() {
 }
 
 function tempColor(temp) {
-  if (temp <= 5) {
+  if (temp <= 4) {
     return "#80FF00";
-  } else if (temp >= 6 && temp <= 11) {
+  } else if (temp >= 5 && temp <= 9) {
     return "#FF8000";
-  } else if (temp >= 12) {
+  } else if (temp >= 10) {
     return "#CC0000";
   } else {
     return 0;
