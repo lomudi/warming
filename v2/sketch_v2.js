@@ -4,7 +4,7 @@ var data;
 
 function preload() {
   table = loadTable(
-    "/climate-change-earth-surface-temperature-data/GlobalLandTemperaturesByMajorCity.csv",
+    "https://lomudi-playground.s3.us-east-2.amazonaws.com/ds/GlobalLandTemperaturesByMajorCity.csv",
     "csv",
     "header"
   );

@@ -6,7 +6,7 @@ var sortedRowsCount;
 
 function preload() {
   table = loadTable(
-    "https://lomudi.github.io/warming/climate-change-earth-surface-temperature-data/GlobalTemperatures.csv",
+    "https://lomudi-playground.s3.us-east-2.amazonaws.com/ds/GlobalTemperatures.csv",
     "csv",
     "header"
   );
