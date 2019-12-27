@@ -6,7 +6,7 @@ var sortedRowsCount;
 
 function preload() {
   table = loadTable(
-    "/climate-change-earth-surface-temperature-data/GlobalTemperatures.csv",
+    "../climate-change-earth-surface-temperature-data/GlobalTemperatures.csv",
     "csv",
     "header"
   );
