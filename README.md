@@ -12,7 +12,7 @@ TBD
 
 ### Sketch 1 - random
 
-[Version 1 Sketch](v1/index.html)
+[Version 1 Sketch](v1/)
 
 ### Sketch 2 - WIP
 
