@@ -4,7 +4,7 @@ var data;
 
 function preload() {
   table = loadTable(
-    "climate-change-earth-surface-temperature-data/GlobalLandTemperaturesByMajorCity.csv",
+    "./climate-change-earth-surface-temperature-data/GlobalLandTemperaturesByMajorCity.csv",
     "csv",
     "header"
   );

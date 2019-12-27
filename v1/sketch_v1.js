@@ -1,12 +1,12 @@
 var table;
-let fr = 10;
+let fr = 60;
 var rows;
 var sortedRows;
 var sortedRowsCount;
 
 function preload() {
   table = loadTable(
-    "climate-change-earth-surface-temperature-data/GlobalTemperatures.csv",
+    "/climate-change-earth-surface-temperature-data/GlobalTemperatures.csv",
     "csv",
     "header"
   );
