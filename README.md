@@ -1,32 +1,19 @@
-# DataArt - Mixing Data, Code. and Art
+# Global Warming DataArt - Mixing Data, Code, and Art
 
-## Global Warming DataArt
-
-### Project Goal
+## Project Goal
 
 TBD
 
-### Sketchs
+## Data-Set
 
-#### Sketch 1 - random
+TBD
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="/libs/p5.js" type="text/javascript"></script>
-    <script src="/libs/p5.dom.min.js" type="text/javascript"></script>
-    <script src="/libs/p5.sound.min.js" type="text/javascript"></script>
-    <script src="/v1/sketch_v1.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="/v1/style.css">
-    <meta charset="utf-8" />
+## Sketchs
 
-  </head>
-  <body>
-  </body>
-</html>
+### Sketch 1 - random
 
 [Version 1 Sketch](v1/)
 
-#### Sketch 2 - WIP
+### Sketch 2 - WIP
 
 [Version 2 Sketch, still work in progress...](v2/)
