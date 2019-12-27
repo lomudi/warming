@@ -2,11 +2,12 @@
 
 ## Project Goal
 
-TBD
+Presnet global warming data in a creative way.
 
 ## Data-Set
 
-TBD
+The data set was taken from Kaggle - https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data (License
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)).
 
 ## Sketchs
 
