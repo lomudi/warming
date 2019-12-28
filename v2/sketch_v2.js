@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800,800);
+  createCanvas(800, 800);
   data = tableCleanup(table);
   print(data);
   loop();
@@ -23,18 +23,17 @@ function draw() {
   stroke(0);
 
   for (var i = 0; i < data.length; i++) {
-
     var avgTemp = float(data[i].getString("AverageTemperature"));
     //var date = data[i].getString("dt");
     //var city = data[i].getString("City");
     var long = float(data[i].getString("Longitude"));
     var lat = float(data[i].getString("Latitude"));
-    
-    var x = map(long,-180,180,0,width);
-    var y = map(lat,-90,90,height,0);
+
+    var x = map(long, -180, 180, 0, width);
+    var y = map(lat, -90, 90, height, 0);
 
     fill(tempColor(avgTemp));
-    rect(x, y, avgTemp/2, avgTemp*2);
+    rect(x, y, avgTemp / 2, avgTemp * 2);
   }
 }
 
@@ -50,9 +49,8 @@ function tempColor(temp) {
   }
 }
 
-function tableCleanup (tableA) {
-    arr = tableA.getRows();
-    
+function tableCleanup(tableA) {
+  arr = tableA.getRows();
 
-    return arr;
+  return arr;
 }
