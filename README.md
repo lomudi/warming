@@ -13,7 +13,7 @@ The data set was taken from [Kaggle](https://www.kaggle.com/berkeleyearth/climat
 
 ### Sketch 1 - random
 
-[Version 1 Sketch](v1/README.md)
+[Version 1 Sketch](v1/)
 
 ### Sketch 2 - WIP
 

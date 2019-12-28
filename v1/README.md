@@ -1,17 +1,1 @@
 # Sketch 1
-
-Some text
-
-<html>
-  <head>
-    <script src="../libs/p5.js" type="text/javascript"></script>
-    <script src="../libs/p5.dom.min.js" type="text/javascript"></script>
-    <script src="../libs/p5.sound.min.js" type="text/javascript"></script>
-    <script src="sketch_v1.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-
-  </head>
-  <body>
-  </body>
-</html>
