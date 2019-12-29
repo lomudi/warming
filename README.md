@@ -13,7 +13,11 @@ The data set was taken from [Kaggle](https://www.kaggle.com/berkeleyearth/climat
 
 ### Sketch 1 - random
 
-[Version 1 Sketch](v1/)
+This sketch is based on the Global Temperatures dataset; the dataset includes the average land temperatures on earth from 1750 until 2015.
+
+In this sketch, for each shape (`rect`), the size and the color is defined by the `LandAverageTemperature` for that day, the location of each shape is entirely random.
+
+[Random Warming - click here to open sketch 1](v1/)
 
 ### Sketch 2 - WIP
 
