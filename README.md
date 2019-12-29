@@ -19,6 +19,10 @@ In this sketch, for each shape (`rect`), the size and the color is defined by th
 
 [Random Warming - click here to open sketch 1](v1/)
 
-### Sketch 2 - WIP
+### Sketch 2 - Getting Bigger
 
-[Version 2 Sketch, still work in progress...](v2/)
+This sketch is based on the Global Land Temperatures By Major City dataset; the dataset includes the average land temperatures on major cities from 1750 until 2015, including their location.
+
+The idea in this sketch is to present the change in the land temperature per major city. The size and the color of the shapes are set by the local average temperature per date, the location of the shapes is stable and unchanging.
+
+- still work in progress, not avail yet.

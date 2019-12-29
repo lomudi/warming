@@ -1,5 +1,5 @@
 var table;
-let fr = 20;
+let fr = 60;
 var data;
 
 function preload() {
