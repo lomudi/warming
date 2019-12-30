@@ -1,6 +1,8 @@
 var table;
 let fr = 60;
 var data;
+var numOfDays;
+r = 0;
 
 function preload() {
   table = loadTable(
@@ -12,37 +14,35 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(window.innerWidth - 4, window.innerHeight - 4);
   data = tableCleanup(table);
   print(data);
+  numOfDays = getNumOfDays(data);
   loop();
 }
 
 function draw() {
-  background(0);
-  stroke(0);
+  background(255);
+  stroke(1);
 
-  for (var i = 0; i < data.length; i++) {
-    var avgTemp = float(data[i].getString("AverageTemperature"));
-    //var date = data[i].getString("dt");
-    //var city = data[i].getString("City");
-    var long = float(data[i].getString("Longitude"));
-    var lat = float(data[i].getString("Latitude"));
-
+  r = r + 1;
+  if (r < numOfDays) {
+    var avgTemp = float(data[r].getString("AverageTemperature"));
+    var long = float(data[r].getString("Longitude"));
+    var lat = float(data[r].getString("Latitude"));
     var x = map(long, -180, 180, 0, width);
     var y = map(lat, -90, 90, height, 0);
-
     fill(tempColor(avgTemp));
-    rect(x, y, avgTemp / 2, avgTemp * 2);
+    rect(x, y, avgTemp, avgTemp * 10);
   }
 }
 
 function tempColor(temp) {
-  if (temp <= 8) {
+  if (temp <= 10) {
     return "#80FF00";
-  } else if (temp >= 9 && temp <= 16) {
+  } else if (temp >= 11 && temp <= 24) {
     return "#FF8000";
-  } else if (temp >= 17) {
+  } else if (temp >= 25) {
     return "#CC0000";
   } else {
     return 0;
@@ -51,6 +51,16 @@ function tempColor(temp) {
 
 function tableCleanup(tableA) {
   arr = tableA.getRows();
-
+  sortArr = arr.sort(function(a, b) {
+    var dateA = new Date(a.dt),
+      dateB = new Date(b.dt);
+    return dateA - dateB;
+  });
   return arr;
+}
+
+function getNumOfDays(dataA) {
+  days = dataA.length;
+
+  return days;
 }
