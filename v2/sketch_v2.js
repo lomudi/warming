@@ -15,8 +15,8 @@ function preload() {
 
 function setup() {
   createCanvas(window.innerWidth - 4, window.innerHeight - 4);
-  data = tableCleanup(table);
-  print(data);
+  data = sortTableByDate(table);
+  //print(data);
   numOfDays = getNumOfDays(data);
   loop();
 }
@@ -49,13 +49,22 @@ function tempColor(temp) {
   }
 }
 
-function tableCleanup(tableA) {
+function sortTableByDate(tableA) {
   arr = tableA.getRows();
-  sortArr = arr.sort(function(a, b) {
-    var dateA = new Date(a.dt),
-      dateB = new Date(b.dt);
-    return dateA - dateB;
-  });
+  arr = arr
+    .map(obj => {
+      const dateString = obj.getString('dt')
+        .split("-")
+        .reverse()
+        .toString();
+      obj.setString('dt', dateString);
+    })
+    .sort(function(a, b) {
+      var dateA = new Date.parse(a.getString('dt')),
+        dateB = new Date.parse(b.getString('dt'));
+      print(dateA, dateB);
+      return dateA - dateB;
+    });
   return arr;
 }
 
