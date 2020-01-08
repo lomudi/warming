@@ -1,12 +1,11 @@
 var table;
 let fr = 60;
 var data;
-var numOfDays;
 r = 0;
 
 function preload() {
   table = loadTable(
-    "https://lomudi-playground.s3.us-east-2.amazonaws.com/ds/GlobalLandTemperaturesByMajorCity.csv",
+    "https://lomudi-playground.s3.us-east-2.amazonaws.com/ds/global_temp_per_day_per_city.csv",
     "csv",
     "header"
   );
@@ -14,19 +13,19 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(window.innerWidth - 4, window.innerHeight - 4);
-  data = sortTableByDate(table);
-  //print(data);
-  numOfDays = getNumOfDays(data);
+  createCanvas(800, 800);
+  data = table.getRows();
+  print(data.length);
   loop();
 }
 
 function draw() {
-  background(255);
+  background(0);
   stroke(1);
 
   r = r + 1;
-  if (r < numOfDays) {
+  if (r < data.length) {
+    print(r);
     var avgTemp = float(data[r].getString("AverageTemperature"));
     var long = float(data[r].getString("Longitude"));
     var lat = float(data[r].getString("Latitude"));
@@ -34,6 +33,8 @@ function draw() {
     var y = map(lat, -90, 90, height, 0);
     fill(tempColor(avgTemp));
     rect(x, y, avgTemp, avgTemp * 10);
+  } else {
+    noLoop();
   }
 }
 
@@ -47,29 +48,4 @@ function tempColor(temp) {
   } else {
     return 0;
   }
-}
-
-function sortTableByDate(tableA) {
-  arr = tableA.getRows();
-  arr = arr
-    .map(obj => {
-      const dateString = obj.getString('dt')
-        .split("-")
-        .reverse()
-        .toString();
-      obj.setString('dt', dateString);
-    })
-    .sort(function(a, b) {
-      var dateA = new Date.parse(a.getString('dt')),
-        dateB = new Date.parse(b.getString('dt'));
-      print(dateA, dateB);
-      return dateA - dateB;
-    });
-  return arr;
-}
-
-function getNumOfDays(dataA) {
-  days = dataA.length;
-
-  return days;
 }
