@@ -1,7 +1,8 @@
 var table;
-let fr = 600;
+let fr = 60;
 var data;
 r = 0;
+let slider;
 
 function preload() {
   table = loadTable(
@@ -13,9 +14,13 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(window.innerWidth - 4, window.innerHeight - 4);
   data = table.getRows();
-  print(data.length);
+  
+  slider = createSlider(1, 365, 15);
+  slider.position(25, 50);
+  slider.style('width', '80px');
+
   loop();
 }
 
@@ -23,17 +28,21 @@ function draw() {
   background(0);
   stroke(1);
 
-  r = r + 1;
+  r = r + slider.value();
+
   if (r < data.length) {
+    var date = data[r].getString("dt");
     var avgTemp = float(data[r].getString("AverageTemperature"));
     var long = float(data[r].getString("Longitude"));
     var lat = float(data[r].getString("Latitude"));
     var x = map(long, -180, 180, 0, width);
     var y = map(lat, -90, 90, height, 0);
     fill(tempColor(avgTemp));
-    rect(x, y, avgTemp, avgTemp * 10);
+    rect(x, y, avgTemp * 2, avgTemp * 15);
+    textSize(24);
+    text(date, 10, 30);
   } else {
-    noLoop();
+    r = 0;
   }
 }
 
