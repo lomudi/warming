@@ -25,6 +25,6 @@ This sketch is based on the Global Land Temperatures By Major City dataset; the 
 
 The idea in this sketch is to present the change in the land temperature per major city. The size and the color of the shapes are set by the local average temperature per date, the location of the shapes is stable and unchanging.
 
-The original data set went throw few sorting and cleaning at this [jupyter notebook](warming-jupyter/temp-by-city.ipynb)
+The original data set went throw few sorting and cleaning at this [jupyter notebook](https://github.com/lomudi/warming/blob/master/warming-jupyter/temp-by-city.ipynb)
 
 [Getting Bigger - click here to open sketch 2](v2/)
