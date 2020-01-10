@@ -1,5 +1,5 @@
 var table;
-let fr = 60;
+let fr = 600;
 var data;
 r = 0;
 
@@ -25,7 +25,6 @@ function draw() {
 
   r = r + 1;
   if (r < data.length) {
-    print(r);
     var avgTemp = float(data[r].getString("AverageTemperature"));
     var long = float(data[r].getString("Longitude"));
     var lat = float(data[r].getString("Latitude"));
