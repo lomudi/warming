@@ -31,7 +31,7 @@ function draw() {
   r = r + slider.value();
 
   if (r < data.length) {
-    var date = data[r].getString("dt");
+    var date = moment(data[r].getString("dt")).format('MMM YYYY');
     var avgTemp = float(data[r].getString("AverageTemperature"));
     var long = float(data[r].getString("Longitude"));
     var lat = float(data[r].getString("Latitude"));

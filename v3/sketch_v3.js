@@ -17,7 +17,7 @@ function setup() {
   createCanvas(window.innerWidth - 4, window.innerHeight - 4);
   data = table.getRows();
   
-  slider = createSlider(1, 365, 15);
+  slider = createSlider(1, 365, 1);
   slider.position(25, 50);
   slider.style('width', '80px');
 
@@ -31,7 +31,7 @@ function draw() {
   r = r + slider.value();
 
   if (r < data.length) {
-    var date = data[r].getString("dt");
+    var date = moment(data[r].getString("dt")).format('MMM YYYY');
     var avgTemp = float(data[r].getString("AverageTemperature"));
     var long = float(data[r].getString("Longitude"));
     var lat = float(data[r].getString("Latitude"));

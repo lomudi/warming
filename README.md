@@ -9,6 +9,8 @@ Presnet global warming data in a creative way.
 The data set was taken from [Kaggle](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data) (License
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)).
 
+The original data set went throw few sorting and cleaning at this [jupyter notebook](https://github.com/lomudi/warming/blob/master/warming-jupyter/temp-by-city.ipynb)
+
 ## Sketchs
 
 ### Sketch 1 - random
@@ -24,8 +26,6 @@ In this sketch, for each shape (`rect`), the size and the color is defined by th
 This sketch is based on the Global Land Temperatures By Major City dataset; the dataset includes the average land temperatures on major cities from 1750 until 2015, including their location.
 
 The idea in this sketch is to present the change in the land temperature per major city. The size and the color of the shapes are set by the local average temperature per date, the location of the shapes is stable and unchanging.
-
-The original data set went throw few sorting and cleaning at this [jupyter notebook](https://github.com/lomudi/warming/blob/master/warming-jupyter/temp-by-city.ipynb)
 
 [Rect Getting Bigger - click here to open sketch 2](v2/)
 
