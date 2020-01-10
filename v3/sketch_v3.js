@@ -38,7 +38,7 @@ function draw() {
     var x = map(long, -180, 180, 0, width);
     var y = map(lat, -90, 90, height, 0);
     fill(tempColor(avgTemp));
-    rect(x, y, avgTemp * 2, avgTemp * 15);
+    ellipse(x, y, avgTemp * 10, avgTemp * 10);
     textSize(24);
     text(date, 10, 30);
   } else {

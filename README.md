@@ -19,7 +19,7 @@ In this sketch, for each shape (`rect`), the size and the color is defined by th
 
 [Random Warming - click here to open sketch 1](v1/)
 
-### Sketch 2 - Getting Bigger
+### Sketch 2 - Rect Getting Bigger
 
 This sketch is based on the Global Land Temperatures By Major City dataset; the dataset includes the average land temperatures on major cities from 1750 until 2015, including their location.
 
@@ -27,4 +27,8 @@ The idea in this sketch is to present the change in the land temperature per maj
 
 The original data set went throw few sorting and cleaning at this [jupyter notebook](https://github.com/lomudi/warming/blob/master/warming-jupyter/temp-by-city.ipynb)
 
-[Getting Bigger - click here to open sketch 2](v2/)
+[Rect Getting Bigger - click here to open sketch 2](v2/)
+
+### Sketch 3 - Ellipse Getting Bigger
+
+[sktech 3](v3/)
