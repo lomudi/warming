@@ -1,0 +1,19 @@
+name: warm_env
+channels:
+  - conda-forge
+dependencies:
+  - jupyter
+  - jupyterlab
+  - matplotlib
+  - pandas
+  - tqdm
+  - python-dateutil
+  - numpy
+  - requests
+  - geopandas
+  - geoplotlib
+  - pyglet
+  - scipy
+  - pyshp
+  - pyarrow
+  - google-cloud-sdk
