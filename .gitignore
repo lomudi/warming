@@ -1,3 +1,4 @@
 .DS_Store
 .vscode
 warming-jupyter/global_temp_per_day_per_city_sortred.csv
+warming-jupyter/env/*
