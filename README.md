@@ -1,34 +1,18 @@
-# Global Warming DataArt - Mixing Data, Code, and Art
-
-## Project Goal
-
-Presnet global warming data in a creative way.
+# Global Warming - Presenting Global Temperature
 
 ## Data-Set
 
 The data set was taken from [Kaggle](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data) (License
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)).
 
-The original data set went throw few sorting and cleaning at this [jupyter notebook](https://github.com/lomudi/warming/blob/master/warming-jupyter/temp-by-city.ipynb)
+The original data set went throw few sorting and cleaning at this [jupyter notebook](warming-jupyter/world-temp-chunks.ipynb)
 
-## Sketchs
+## The Sketch
 
-### Sketch 1 - random
+This visualization is presenting the temperature in majors cities in the world from 1900 to 2013.
 
-This sketch is based on the Global Temperatures dataset; the dataset includes the average land temperatures on earth from 1750 until 2015.
+It uses the [Global Temperature by City table](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data#GlobalLandTemperaturesByCity.csv) that was sorted by date and the Lat/Long was parsed to coordinates from UTM.
 
-In this sketch, for each shape (`rect`), the size and the color is defined by the `LandAverageTemperature` for that day, the location of each shape is entirely random.
+Its temperature sets each city color - Green will be smaller than 10 degrees celsius, Orange between 11 to 22 degrees celsius, and Red are larger than 23 degrees celsius.
 
-[Random Warming - click here to open sketch 1](v1/)
-
-### Sketch 2 - Rect Getting Bigger
-
-This sketch is based on the Global Land Temperatures By Major City dataset; the dataset includes the average land temperatures on major cities from 1750 until 2015, including their location.
-
-The idea in this sketch is to present the change in the land temperature per major city. The size and the color of the shapes are set by the local average temperature per date, the location of the shapes is stable and unchanging.
-
-[Rect Getting Bigger - click here to open sketch 2](v2/)
-
-### Sketch 3 - Ellipse Getting Bigger
-
-[sktech 3](v3/)
+[WATCH IT HERE](v3/)
